@@ -16,7 +16,7 @@ var team2wickets = 0
 var ballsfaced = 0
 var turn = 1
 
-function finished = () => {
+function finished = () {
     cheer.play()
     if (team1score > team2score) alert("India Wins");
     if (team2score > team1score) alert("Pakistan Wins");
