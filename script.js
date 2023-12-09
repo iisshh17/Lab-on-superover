@@ -6,7 +6,7 @@ const $team2wickets = document.getElementById("wickets-team2")
 const resetbutton = document.getElementById("reset")
 const strikebutton = document.getElementById("strike")
 const strike = new Audio("https://i1.faceprep.in/prograd-junior/bat%2Bhit%2Bball.mp3")
-const cheer = new Audio("https://i1.faceprep.in/prograd-junior/bat%2Bhit%2Bball.mp3")
+const cheer = new Audio("http://bit.ly/so-crowd-cheer")
 
 
 var team1score = 0
@@ -17,7 +17,7 @@ var ballsfaced = 0
 var turn = 1
 
 function finished () {
-    cheer.play()
+    cheer.play();
     if (team1score > team2score) alert("India Wins");
     if (team2score > team1score) alert("Pakistan Wins");
     if (team1score == team2score) alert("Draw Match");
